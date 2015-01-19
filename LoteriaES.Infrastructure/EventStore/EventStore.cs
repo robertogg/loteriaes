@@ -29,7 +29,7 @@ namespace LoteriaES.Infrastructure.EventStore
 
         public void SaveEvents(int aggregateId, IEnumerable<IEvent> events, int expectedVersion)
         {
-            
+            //Save
         }
 
         public List<IEvent> GetEventsForAggregate(int aggregateId)
