@@ -24,17 +24,17 @@ namespace LoteriaES.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public T Get(int id)
+        public T Get(Guid id)
         {
             var data = new T();
-            var events = _eventStore.GetEventsForAggregate(id);
+            var events = _eventStore.GetEventsForAggregate(id).Result;
             data.LoadsFromHistory(events);
             return data;
         }
 
         public T Add(T entity)
         {
-            //Persistir evento en EventStore
+            _eventStore.SaveEvents(entity.Id, entity.GetUnpublishedEvents(), entity.Version).Wait();
             PublishEvents(entity);
             return entity;
         }

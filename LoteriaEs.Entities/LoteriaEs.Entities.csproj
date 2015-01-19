@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LoteriaES.CQRS">
-      <HintPath>..\LoteriaES.CQRS\bin\Debug\LoteriaES.CQRS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +46,10 @@
     <ProjectReference Include="..\LoteriaES.Core\LoteriaES.Core.csproj">
       <Project>{7C59FA7D-0038-4CEC-A6FB-3ADA85B34995}</Project>
       <Name>LoteriaES.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoteriaEs.Events\LoteriaEs.Events.csproj">
+      <Project>{99436C87-E387-4A3E-B9C0-582E013C7B3C}</Project>
+      <Name>LoteriaEs.Events</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

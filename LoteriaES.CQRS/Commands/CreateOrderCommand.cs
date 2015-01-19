@@ -9,7 +9,7 @@ namespace LoteriaES.CQRS.Commands
 {
     public class CreateOrderCommand : ICommand
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string NumeroLoteria { get; set; }
         public int Cantidad { get; set; }
     }

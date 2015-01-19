@@ -9,7 +9,7 @@ namespace LoteriaES.Core
 {
     public interface IEventStore
     {
-        void SaveEvents(int aggregateId, IEnumerable<IEvent> events, int expectedVersion);
-        List<IEvent> GetEventsForAggregate(int aggregateId);
+        Task SaveEvents(Guid aggregateId, IEnumerable<IEvent> events, int expectedVersion);
+        Task<List<IEvent>> GetEventsForAggregate(Guid aggregateId);
     }
 }

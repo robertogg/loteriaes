@@ -12,6 +12,8 @@ namespace LoteriaES.Core.Constants
         {
             public const string StorageConnectionString = "LoteriaES.WindowsAzure.Storage.ConnectionString";
             public const string ServiceBusKbEventsQueue = "LoteriaES.WindowsAzure.ServiceBus.KbEventsQueue";
+            public const string DocumentDbUri = "LoteriaEs.WindowsAzure.DocumentDB.Uri";
+            public const string DocumentDbKey = "LoteriaEs.WindowsAzure.DocumentDB.Key";
         }
     }
 }

@@ -18,18 +18,29 @@ namespace LoteriaES.Controllers
         }
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult NewOrder()
+        {
+            _bus.Send(new CreateOrderCommand
+            {
+                Id = new Guid("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
+                NumeroLoteria = "00000",
+                Cantidad = 1
+            });
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult UpdateOrder()
+        {
             _bus.Send(new UpdateOrderCommand
             {
-                Id = 1,
+                Id = new Guid("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
                 NumeroLoteria = "00000",
                 Cantidad = 10
             });
-            //_bus.Send(new CreateOrderCommand
-            //{
-            //    Id=1,
-            //    NumeroLoteria = "00000"
-            //});
-            return View();
+            return RedirectToAction("Index");
         }
 
         public ActionResult About()

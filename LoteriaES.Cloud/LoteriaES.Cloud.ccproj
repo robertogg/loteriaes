@@ -36,6 +36,24 @@
     <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LoteriaES\LoteriaES.csproj">
+      <Name>LoteriaES</Name>
+      <Project>{9be20137-6236-4aea-9652-2946ff9eaa62}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>LoteriaES</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LoteriaESContent\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoteriaESContent\diagnostics.wadcfg">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>

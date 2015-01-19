@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using LoteriaES.Core;
 using LoteriaES.Core.CQRS;
 using LoteriaES.CQRS.Commands;
-using LoteriaES.CQRS.Events;
 using LoteriaEs.Entities;
+using LoteriaEs.Events.Events;
 
 namespace LoteriaES.CQRS.CommandHandlers
 {
@@ -22,7 +22,7 @@ namespace LoteriaES.CQRS.CommandHandlers
         public void Execute(UpdateOrderCommand command)
         {
             var loteriaOrder = _orderRepository.Get(command.Id);
-            loteriaOrder.UpdateOrder(command.NumeroLoteria,command.Cantidad);
+            loteriaOrder.UpdateOrder(command.NumeroLoteria, command.Cantidad, loteriaOrder.Version);
             loteriaOrder.ApplyEvent(new EntityUpdatedEvent<Order>(loteriaOrder));
             _orderRepository.Add(loteriaOrder);
         }

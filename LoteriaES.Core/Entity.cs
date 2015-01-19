@@ -11,7 +11,8 @@ namespace LoteriaES.Core
     {
         private readonly List<IEvent> _events = new List<IEvent>();
 
-        public int Id { get; set; }
+        public Guid Id { get; set; }
+        public int Version { get; set; }
 
         public IEnumerable<IEvent> GetUnpublishedEvents()
         {
@@ -38,10 +39,5 @@ namespace LoteriaES.Core
         {
             this.AsDynamic().Apply(@event);
         }
-        //private void ApplyChange(IEvent @event, bool isNew)
-        //{
-            
-           
-        //}
     }
 }
