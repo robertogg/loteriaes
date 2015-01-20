@@ -9,8 +9,20 @@ namespace LoteriaES.CQRS.Commands
 {
     public class UpdateOrderCommand : ICommand
     {
-        public Guid Id { get; set; }
-        public string NumeroLoteria { get; set; }
-        public int Cantidad { get; set; }
+        public Guid Id { get; private set; }
+
+        public string NumeroLoteria { get; private set; }
+
+        public int Cantidad { get; private set; }
+
+        public UpdateOrderCommand(
+            Guid id,
+            string numeroLoteria,
+            int cantidad)
+        {
+            Id = id;
+            NumeroLoteria = numeroLoteria;
+            Cantidad = cantidad;
+        }
     }
 }

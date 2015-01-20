@@ -23,10 +23,5 @@
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
-    <Contents>
-      <Content destination=".\">
-        <SourceDirectory path="C:\Proyectos\Eventos\LoteriaES\LoteriaES.Cloud\rcf\Debug\LoteriaESContent\" />
-      </Content>
-    </Contents>
   </WebRole>
 </ServiceDefinition>

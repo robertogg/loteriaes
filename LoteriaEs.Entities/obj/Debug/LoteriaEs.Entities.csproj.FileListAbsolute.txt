@@ -7,3 +7,12 @@ C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Entities\bin\Debug\LoteriaEs.Events.pdb
 C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Entities\obj\Debug\LoteriaEs.Entities.csprojResolveAssemblyReference.cache
 C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Entities\obj\Debug\LoteriaEs.Entities.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Entities\obj\Debug\LoteriaEs.Entities.pdb
+C:\DEV\loteriaes\LoteriaEs.Entities\bin\Debug\LoteriaEs.Entities.dll
+C:\DEV\loteriaes\LoteriaEs.Entities\bin\Debug\LoteriaEs.Entities.pdb
+C:\DEV\loteriaes\LoteriaEs.Entities\bin\Debug\LoteriaES.Core.dll
+C:\DEV\loteriaes\LoteriaEs.Entities\bin\Debug\LoteriaEs.Events.dll
+C:\DEV\loteriaes\LoteriaEs.Entities\bin\Debug\LoteriaES.Core.pdb
+C:\DEV\loteriaes\LoteriaEs.Entities\bin\Debug\LoteriaEs.Events.pdb
+C:\DEV\loteriaes\LoteriaEs.Entities\obj\Debug\LoteriaEs.Entities.csprojResolveAssemblyReference.cache
+C:\DEV\loteriaes\LoteriaEs.Entities\obj\Debug\LoteriaEs.Entities.dll
+C:\DEV\loteriaes\LoteriaEs.Entities\obj\Debug\LoteriaEs.Entities.pdb
