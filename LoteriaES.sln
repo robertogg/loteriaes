@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaES", "LoteriaES.csproj", "{9BE20137-6236-4AEA-9652-2946FF9EAA62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaES.Core", "LoteriaES.Core\LoteriaES.Core.csproj", "{7C59FA7D-0038-4CEC-A6FB-3ADA85B34995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaES.CQRS", "LoteriaES.CQRS\LoteriaES.CQRS.csproj", "{151DA9C1-7529-43AB-A0A3-D44FB32927EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaEs.Entities", "LoteriaEs.Entities\LoteriaEs.Entities.csproj", "{DCB65FF1-CFA1-4ED9-B310-1FC82A2D50EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaES.Infrastructure", "LoteriaES.Infrastructure\LoteriaES.Infrastructure.csproj", "{46F5D3C4-A323-40A4-A11C-819713314406}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "LoteriaES.Cloud", "LoteriaES.Cloud\LoteriaES.Cloud.ccproj", "{EED6BBF7-BF57-4FFE-8F3D-4294DF0FDA80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaEs.Events", "LoteriaEs.Events\LoteriaEs.Events.csproj", "{99436C87-E387-4A3E-B9C0-582E013C7B3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{06A60A67-0322-4F6A-8E65-59201F4615B2}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE20137-6236-4AEA-9652-2946FF9EAA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE20137-6236-4AEA-9652-2946FF9EAA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE20137-6236-4AEA-9652-2946FF9EAA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE20137-6236-4AEA-9652-2946FF9EAA62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C59FA7D-0038-4CEC-A6FB-3ADA85B34995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C59FA7D-0038-4CEC-A6FB-3ADA85B34995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C59FA7D-0038-4CEC-A6FB-3ADA85B34995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C59FA7D-0038-4CEC-A6FB-3ADA85B34995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151DA9C1-7529-43AB-A0A3-D44FB32927EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151DA9C1-7529-43AB-A0A3-D44FB32927EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151DA9C1-7529-43AB-A0A3-D44FB32927EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151DA9C1-7529-43AB-A0A3-D44FB32927EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB65FF1-CFA1-4ED9-B310-1FC82A2D50EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB65FF1-CFA1-4ED9-B310-1FC82A2D50EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB65FF1-CFA1-4ED9-B310-1FC82A2D50EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB65FF1-CFA1-4ED9-B310-1FC82A2D50EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F5D3C4-A323-40A4-A11C-819713314406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F5D3C4-A323-40A4-A11C-819713314406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F5D3C4-A323-40A4-A11C-819713314406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F5D3C4-A323-40A4-A11C-819713314406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED6BBF7-BF57-4FFE-8F3D-4294DF0FDA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED6BBF7-BF57-4FFE-8F3D-4294DF0FDA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED6BBF7-BF57-4FFE-8F3D-4294DF0FDA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED6BBF7-BF57-4FFE-8F3D-4294DF0FDA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99436C87-E387-4A3E-B9C0-582E013C7B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99436C87-E387-4A3E-B9C0-582E013C7B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99436C87-E387-4A3E-B9C0-582E013C7B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99436C87-E387-4A3E-B9C0-582E013C7B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
