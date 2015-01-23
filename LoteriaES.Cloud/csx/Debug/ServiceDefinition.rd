@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoteriaES.Cloud" generation="1" functional="0" release="0" Id="01803113-b8d8-4834-b767-365e2523f1c7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoteriaES.Cloud" generation="1" functional="0" release="0" Id="e83064eb-c515-487e-bf48-f19539c3ab5a" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="LoteriaES.CloudGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="0c634484-754d-4813-8bef-6818684ce38e" ref="Microsoft.RedDog.Contract\ServiceContract\LoteriaES.CloudContract@ServiceDefinition">
+    <implementation Id="22e4fbaa-9b35-45c2-8fdf-81c88aac6513" ref="Microsoft.RedDog.Contract\ServiceContract\LoteriaES.CloudContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="fb0480f1-ccf3-4d8b-8945-c2dd6590cea2" ref="Microsoft.RedDog.Contract\Interface\LoteriaES:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="5fe5d8bf-aba0-4749-9ca6-7359608cf09e" ref="Microsoft.RedDog.Contract\Interface\LoteriaES:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/LoteriaES.Cloud/LoteriaES.CloudGroup/LoteriaES:Endpoint1" />
           </inPort>

@@ -11,7 +11,6 @@ namespace LoteriaEs.Entities
     {
         public string NumeroLoteria { get; set; }
         public int Cantidad { get; set; }
-
         public Guid OrderId { get; set; }
     }
 }

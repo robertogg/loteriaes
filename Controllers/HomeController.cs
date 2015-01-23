@@ -37,7 +37,7 @@ namespace LoteriaES.Controllers
         {
             var command = new UpdateOrderCommand(
                 Guid.Parse("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
-                Guid.Parse("f29ed7f4-9874-4df4-9b8d-2eb2bbe3bbdd"),
+                Guid.Parse("0c572c7d-f91e-46ae-96f1-04293241ee13"),
                 "00000",
                 10);
 

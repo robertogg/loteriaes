@@ -24,6 +24,7 @@ namespace LoteriaEs.Entities
         }
         private void Apply(EntityCreatedEvent<OrderLine> @event)
         {
+            Version = @event.Sender.Version;
             var orderLine = new OrderLine
             {
                 OrderId = @event.Sender.OrderId,
@@ -40,7 +41,7 @@ namespace LoteriaEs.Entities
             {
                 Cantidad = cantidad,
                 Id = idOrderLine,
-                Version = _orderLines.Find(data=>data.Id==idOrderLine).Version
+                Version = this.Version
             };
             ApplyChange(new EntityUpdatedEvent<OrderLine>(orderLine));
         }
