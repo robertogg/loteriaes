@@ -9,3 +9,14 @@ C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Events.pdb
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.csprojResolveAssemblyReference.cache
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.pdb
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaES.CQRS.dll
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaES.CQRS.pdb
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaES.Core.dll
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaEs.Entities.dll
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaEs.Events.dll
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaES.Core.pdb
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaEs.Entities.pdb
+C:\DEV\loteriaes\LoteriaES.CQRS\bin\Debug\LoteriaEs.Events.pdb
+C:\DEV\loteriaes\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.csprojResolveAssemblyReference.cache
+C:\DEV\loteriaes\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.dll
+C:\DEV\loteriaes\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.pdb

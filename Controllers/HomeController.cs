@@ -23,23 +23,26 @@ namespace LoteriaES.Controllers
 
         public ActionResult NewOrder()
         {
-            _bus.Send(new CreateOrderCommand
-            {
-                Id = new Guid("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
-                NumeroLoteria = "00000",
-                Cantidad = 1
-            });
+            var command = new CreateOrderCommand(
+                new Guid("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
+                "00000",
+                1);
+
+            _bus.Send(command);
+
             return RedirectToAction("Index");
         }
 
         public ActionResult UpdateOrder()
         {
-            _bus.Send(new UpdateOrderCommand
-            {
-                Id = new Guid("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
-                NumeroLoteria = "00000",
-                Cantidad = 10
-            });
+            var command = new UpdateOrderCommand(
+                Guid.Parse("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
+                Guid.Parse("f29ed7f4-9874-4df4-9b8d-2eb2bbe3bbdd"),
+                "00000",
+                10);
+
+            _bus.Send(command);
+
             return RedirectToAction("Index");
         }
 

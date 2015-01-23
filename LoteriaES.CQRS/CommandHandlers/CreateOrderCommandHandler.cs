@@ -21,15 +21,20 @@ namespace LoteriaES.CQRS.CommandHandlers
         }
         public void Execute(CreateOrderCommand command)
         {
-            //En este caso se crea el pedido en otros aqui se debería llamar a GetById
             var loteriaOrder = new Order()
             {
-                Id = command.Id,
-                NumeroLoteria = command.NumeroLoteria,
-                Cantidad = command.Cantidad,
-                Version = 0
+                Id = command.Id
             };
+            var loteriaOrderItem = new OrderLine()
+            {
+                Id = Guid.NewGuid(),
+                OrderId = command.Id,
+                Cantidad = command.Cantidad,
+                NumeroLoteria = command.NumeroLoteria
+            };
+          
             loteriaOrder.ApplyEvent(new EntityCreatedEvent<Order>(loteriaOrder));
+            loteriaOrder.ApplyEvent(new EntityCreatedEvent<OrderLine>(loteriaOrderItem));
             _orderRepository.Add(loteriaOrder);
         }
     }

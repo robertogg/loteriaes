@@ -30,15 +30,13 @@ namespace LoteriaES.Infrastructure.EventStore
         }
         private struct EventDescriptor
         {
-            public readonly Guid EventId;
-            public readonly int Version;
+            public readonly Guid AggregateId;
             public readonly IEvent EventData;
             public string EventType;
 
-            public EventDescriptor(Guid id, IEvent eventData, int version)
+            public EventDescriptor(Guid id, IEvent eventData)
             {
-                EventId = id;
-                Version = version;
+                AggregateId = id;
                 EventData = eventData;
                 EventType = eventData.GetType().AssemblyQualifiedName;
             }
@@ -46,14 +44,14 @@ namespace LoteriaES.Infrastructure.EventStore
 
         public async Task SaveEvents(Guid aggregateId, IEnumerable<IEvent> events, int expectedVersion)
         {
-            expectedVersion++;
             var client = new DocumentClient(new Uri(_documentDbUri), _documentDBKey);
             var documentCollection = await GetDocumentCollection(client, DatabaseId, CollectionId);
 
             foreach (var @event in events)
             {
+                expectedVersion++;
                 @event.AsDynamic().Sender.Version = expectedVersion;
-                var eventDescriptor = new EventDescriptor(aggregateId, @event, expectedVersion);
+                var eventDescriptor = new EventDescriptor(aggregateId, @event);
                 client.CreateDocumentAsync(documentCollection.DocumentsLink, eventDescriptor).Wait();
             }
         }
@@ -63,7 +61,7 @@ namespace LoteriaES.Infrastructure.EventStore
             var client = new DocumentClient(new Uri(_documentDbUri), _documentDBKey);
             var documentCollection = await GetDocumentCollection(client, DatabaseId, CollectionId);
             var eventDescriptors = client.CreateDocumentQuery(documentCollection.DocumentsLink,
-                string.Format("SELECT * FROM Events e WHERE e.EventId ='{0}'", aggregateId))
+                string.Format("SELECT * FROM Events e WHERE e.AggregateId ='{0}'", aggregateId))
                 .ToList()
                 .Select(data => (data.EventData as JObject).ToObject(Type.GetType(data.EventType.ToString())))
                 .Cast<IEvent>().ToList();
