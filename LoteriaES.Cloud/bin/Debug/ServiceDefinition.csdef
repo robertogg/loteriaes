@@ -29,4 +29,20 @@
       </Content>
     </Contents>
   </WebRole>
+  <WorkerRole name="LoteriaES.WorkerEventsHandler" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="LoteriaES.WindowsAzure.ServiceBus.KbEventsQueue" />
+      <Setting name="LoteriaES.WindowsAzure.Storage.ConnectionString" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Uri" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Key" />
+    </ConfigurationSettings>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="C:\Proyectos\Eventos\LoteriaES\LoteriaES.Cloud\rcf\Debug\LoteriaES.WorkerEventsHandlerContent\" />
+      </Content>
+    </Contents>
+  </WorkerRole>
 </ServiceDefinition>

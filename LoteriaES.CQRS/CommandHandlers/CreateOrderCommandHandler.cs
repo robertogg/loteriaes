@@ -13,9 +13,9 @@ namespace LoteriaES.CQRS.CommandHandlers
 {
     public class CreateOrderCommandHandler: ICommandHandler<CreateOrderCommand>
     {
-        private readonly IRepository<Order> _orderRepository;
+        private readonly IEventStoreRepository<Order> _orderRepository;
 
-        public CreateOrderCommandHandler(IRepository<Order> ordeRepository )
+        public CreateOrderCommandHandler(IEventStoreRepository<Order> ordeRepository )
         {
             _orderRepository = ordeRepository;
         }
@@ -29,8 +29,8 @@ namespace LoteriaES.CQRS.CommandHandlers
             {
                 Id = Guid.NewGuid(),
                 OrderId = command.Id,
-                Cantidad = command.Cantidad,
-                NumeroLoteria = command.NumeroLoteria
+                Quantity = command.Cantidad,
+                LotteryNumber = command.NumeroLoteria
             };
           
             loteriaOrder.ApplyEvent(new EntityCreatedEvent<Order>(loteriaOrder));

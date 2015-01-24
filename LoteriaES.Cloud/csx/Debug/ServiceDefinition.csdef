@@ -12,4 +12,18 @@
     </Endpoints>
     <Certificates />
   </WebRole>
+  <WorkerRole name="LoteriaES.WorkerEventsHandler">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Key" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Uri" />
+      <Setting name="LoteriaES.WindowsAzure.ServiceBus.KbEventsQueue" />
+      <Setting name="LoteriaES.WindowsAzure.Storage.ConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints />
+    <Certificates />
+  </WorkerRole>
 </ServiceDefinition>

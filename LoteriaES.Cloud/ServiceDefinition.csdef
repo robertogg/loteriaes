@@ -15,4 +15,15 @@
       <Import moduleName="Diagnostics" />
     </Imports>
   </WebRole>
+  <WorkerRole name="LoteriaES.WorkerEventsHandler" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="LoteriaES.WindowsAzure.ServiceBus.KbEventsQueue" />
+      <Setting name="LoteriaES.WindowsAzure.Storage.ConnectionString" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Uri" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Key" />
+    </ConfigurationSettings>
+  </WorkerRole>
 </ServiceDefinition>

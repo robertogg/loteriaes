@@ -1,10 +1,3 @@
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaEs.Events.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaEs.Events.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaES.Core.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaES.Core.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.csprojResolveAssemblyReference.cache
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.pdb
 C:\DEV\loteriaes\LoteriaEs.Events\bin\Debug\LoteriaEs.Events.dll
 C:\DEV\loteriaes\LoteriaEs.Events\bin\Debug\LoteriaEs.Events.pdb
 C:\DEV\loteriaes\LoteriaEs.Events\bin\Debug\LoteriaES.Core.dll
@@ -12,3 +5,12 @@ C:\DEV\loteriaes\LoteriaEs.Events\bin\Debug\LoteriaES.Core.pdb
 C:\DEV\loteriaes\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.csprojResolveAssemblyReference.cache
 C:\DEV\loteriaes\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.dll
 C:\DEV\loteriaes\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaEs.Events.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaEs.Events.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaES.Core.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaES.Core.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.csprojResolveAssemblyReference.cache
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\obj\Debug\LoteriaEs.Events.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaES.Models.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaEs.Events\bin\Debug\LoteriaES.Models.pdb

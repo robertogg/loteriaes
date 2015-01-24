@@ -13,7 +13,7 @@ namespace LoteriaEs.Entities
         private void Apply(EntityUpdatedEvent<OrderLine> @event)
         {
             var currentOrderLine = _orderLines.Find(data => data.Id == @event.Sender.Id);
-            currentOrderLine.Cantidad = @event.Sender.Cantidad;
+            currentOrderLine.Quantity = @event.Sender.Quantity;
             Version = @event.Sender.Version;
         }
 
@@ -28,9 +28,9 @@ namespace LoteriaEs.Entities
             var orderLine = new OrderLine
             {
                 OrderId = @event.Sender.OrderId,
-                Cantidad = @event.Sender.Cantidad,
+                Quantity = @event.Sender.Quantity,
                 Id = @event.Sender.Id,
-                NumeroLoteria = @event.Sender.NumeroLoteria,
+                LotteryNumber = @event.Sender.LotteryNumber,
                 Version = @event.Sender.Version
             };
             _orderLines.Add(orderLine);
@@ -39,7 +39,7 @@ namespace LoteriaEs.Entities
         {
             var orderLine = new OrderLine
             {
-                Cantidad = cantidad,
+                Quantity = cantidad,
                 Id = idOrderLine,
                 Version = this.Version
             };

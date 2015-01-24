@@ -13,9 +13,9 @@ namespace LoteriaES.CQRS.CommandHandlers
 {
     public class UpdateOrderCommandHandler: ICommandHandler<UpdateOrderCommand>
     {
-        private readonly IRepository<Order> _orderRepository;
+        private readonly IEventStoreRepository<Order> _orderRepository;
 
-        public UpdateOrderCommandHandler(IRepository<Order> ordeRepository )
+        public UpdateOrderCommandHandler(IEventStoreRepository<Order> ordeRepository )
         {
             _orderRepository = ordeRepository;
         }

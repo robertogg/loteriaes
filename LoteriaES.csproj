@@ -259,6 +259,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\OrderList.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\UpdateOrderLine.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,6 +282,10 @@
     <ProjectReference Include="LoteriaES.Infrastructure\LoteriaES.Infrastructure.csproj">
       <Project>{46F5D3C4-A323-40A4-A11C-819713314406}</Project>
       <Name>LoteriaES.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="LoteriaES.Models\LoteriaES.Models.csproj">
+      <Project>{22269e6b-39bb-469b-af15-26358778467a}</Project>
+      <Name>LoteriaES.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -9,8 +9,8 @@ namespace LoteriaEs.Entities
 {
     public class OrderLine: Entity
     {
-        public string NumeroLoteria { get; set; }
-        public int Cantidad { get; set; }
+        public string LotteryNumber { get; set; }
+        public int Quantity { get; set; }
         public Guid OrderId { get; set; }
     }
 }

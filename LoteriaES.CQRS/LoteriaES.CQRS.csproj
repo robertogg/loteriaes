@@ -44,6 +44,8 @@
     <Compile Include="CommandHandlers\CreateOrderCommandHandler.cs" />
     <Compile Include="Commands\UpdateOrderCommand.cs" />
     <Compile Include="Commands\CreateOrderCommand.cs" />
+    <Compile Include="EventHandlers\OrderLineItemUpdated.cs" />
+    <Compile Include="EventHandlers\OrderLineItemCreated.cs" />
     <Compile Include="EventHandlers\OrderItemIsCreated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,6 +61,14 @@
     <ProjectReference Include="..\LoteriaEs.Events\LoteriaEs.Events.csproj">
       <Project>{99436C87-E387-4A3E-B9C0-582E013C7B3C}</Project>
       <Name>LoteriaEs.Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoteriaES.Infrastructure\LoteriaES.Infrastructure.csproj">
+      <Project>{46F5D3C4-A323-40A4-A11C-819713314406}</Project>
+      <Name>LoteriaES.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoteriaES.Models\LoteriaES.Models.csproj">
+      <Project>{22269E6B-39BB-469B-AF15-26358778467A}</Project>
+      <Name>LoteriaES.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

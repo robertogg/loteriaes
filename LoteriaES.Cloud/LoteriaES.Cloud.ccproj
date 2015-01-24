@@ -45,11 +45,23 @@
       <RoleName>LoteriaES</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
+    <ProjectReference Include="..\LoteriaES.WorkerEventsHandler\LoteriaES.WorkerEventsHandler.csproj">
+      <Name>LoteriaES.WorkerEventsHandler</Name>
+      <Project>{c2f79d19-a017-4763-88ec-0dc2f7ec3d2d}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>LoteriaES.WorkerEventsHandler</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="LoteriaES.WorkerEventsHandlerContent\" />
     <Folder Include="LoteriaESContent\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LoteriaES.WorkerEventsHandlerContent\diagnostics.wadcfg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="LoteriaESContent\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<LoteriaES.Models.LotteryOrderLine>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Id Pedido
+        </th>
+        <th>
+            Número de Lotería
+        </th>
+        <th>
+            Cantidad
+        </th>
+        <th>
+            Precio
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lottery.Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lottery.LotteryPrice)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "UpdateOrderLine", new {orderId=item.OrderId, orderLineid=item.OrderLineId }) |
+        </td>
+    </tr>
+}
+
+</table>

@@ -6,4 +6,14 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>
   </Role>
+  <Role name="LoteriaES.WorkerEventsHandler">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="LoteriaES.WindowsAzure.ServiceBus.KbEventsQueue" value="loteria-events-queue" />
+      <Setting name="LoteriaES.WindowsAzure.Storage.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=loteriaes;AccountKey=cwT+bNB74Q+Pc9c3UrkG7Mvmx6+Y1fYw1INwxxkewkyiLZ7qdeYeHtVORYhsY+Scdtth0/VBmkrsXaZ7o0hxMw==" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Uri" value="https://loteriaes.documents.azure.com:443/" />
+      <Setting name="LoteriaEs.WindowsAzure.DocumentDB.Key" value="h0vAAxp3UKb+vCvH+beOyPYIbSYMKI79rPjeMSSNfS05kXD6N+tnaceufzM/6mg3JxHya4t4YL/Gy1MMOJXEaA==" />
+    </ConfigurationSettings>
+  </Role>
 </ServiceConfiguration>

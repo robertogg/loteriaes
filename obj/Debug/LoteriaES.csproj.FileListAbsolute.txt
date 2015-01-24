@@ -250,3 +250,5 @@ C:\DEV\loteriaes\bin\zh-Hant\System.Spatial.resources.dll
 C:\DEV\loteriaes\obj\Debug\LoteriaES.csprojResolveAssemblyReference.cache
 C:\DEV\loteriaes\obj\Debug\LoteriaES.dll
 C:\DEV\loteriaes\obj\Debug\LoteriaES.pdb
+C:\Proyectos\Eventos\LoteriaES\bin\LoteriaES.Models.dll
+C:\Proyectos\Eventos\LoteriaES\bin\LoteriaES.Models.pdb

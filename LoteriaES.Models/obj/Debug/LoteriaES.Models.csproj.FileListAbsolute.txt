@@ -1,0 +1,4 @@
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Models\bin\Debug\LoteriaES.Models.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Models\bin\Debug\LoteriaES.Models.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Models\obj\Debug\LoteriaES.Models.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Models\obj\Debug\LoteriaES.Models.pdb

@@ -1,8 +1,11 @@
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\bin\Debug\LoteriaES.Core.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\bin\Debug\LoteriaES.Core.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\obj\Debug\LoteriaES.Core.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\obj\Debug\LoteriaES.Core.pdb
 C:\DEV\loteriaes\LoteriaES.Core\bin\Debug\LoteriaES.Core.dll
 C:\DEV\loteriaes\LoteriaES.Core\bin\Debug\LoteriaES.Core.pdb
 C:\DEV\loteriaes\LoteriaES.Core\obj\Debug\LoteriaES.Core.dll
 C:\DEV\loteriaes\LoteriaES.Core\obj\Debug\LoteriaES.Core.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\bin\Debug\LoteriaES.Core.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\bin\Debug\LoteriaES.Core.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\obj\Debug\LoteriaES.Core.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\obj\Debug\LoteriaES.Core.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\bin\Debug\LoteriaES.Models.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\bin\Debug\LoteriaES.Models.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.Core\obj\Debug\LoteriaES.Core.csprojResolveAssemblyReference.cache

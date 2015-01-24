@@ -54,17 +54,8 @@ namespace LoteriaES.App_Start
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
-                kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>));
-                kernel.Bind(typeof(IEventStore)).To(typeof(EventStore));
-
-                kernel.Bind(
-                    x => x.FromAssemblyContaining(typeof(CreateOrderCommandHandler))
-                         .SelectAllClasses()
-                        .BindAllInterfaces());
-
-                RegisterServices(kernel);
-
                
+                RegisterServices(kernel);
 
                 return kernel;
             }
@@ -77,6 +68,14 @@ namespace LoteriaES.App_Start
 
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind(typeof(IEventStoreRepository<>)).To(typeof(EventStoreRepository<>));
+            kernel.Bind(typeof(IEventStore)).To(typeof(EventStore));
+
+            kernel.Bind(
+                x => x.FromAssemblyContaining(typeof(CreateOrderCommandHandler))
+                     .SelectAllClasses()
+                    .BindAllInterfaces());
+
             kernel.Bind<IMessageBus>()
                  .To<MessageBus>()
                  .InSingletonScope()
@@ -84,6 +83,10 @@ namespace LoteriaES.App_Start
                  .WithConstructorArgument("connectionString", CloudConfigurationManager.GetSetting(Azure.Configuration.StorageConnectionString))
                  .WithConstructorArgument("path", CloudConfigurationManager.GetSetting(Azure.Configuration.ServiceBusKbEventsQueue));
 
+            kernel.Bind(typeof(IOrderRepository))
+                .To(typeof(OrderRepository));
+            kernel.Bind(typeof(IProductRepository))
+                    .To(typeof(ProductRepository));
         }        
     }
 }
