@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LotteryNewOrder.cs" />
     <Compile Include="LotteryNumber.cs" />
     <Compile Include="LotteryOrder.cs" />
     <Compile Include="LotteryOrderLine.cs" />

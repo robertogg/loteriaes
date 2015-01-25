@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<LoteriaES.Models.LotteryOrderLine>
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalles";
 }
 
-<h2>Details</h2>
+<h3>Detalles del pedido</h3>
 
 <table class="table">
     <tr>
@@ -38,9 +38,12 @@
             @Html.DisplayFor(modelItem => item.Lottery.LotteryPrice)
         </td>
         <td>
-            @Html.ActionLink("Modificar", "UpdateOrderLine", new {orderId=item.OrderId, orderLineid=item.OrderLineId }) |
+            @Html.ActionLink("Modificar", "UpdateOrderLine", new {orderId=item.OrderId, orderLineid=item.OrderLineId }, htmlAttributes: new { @class = "btn btn-default btn-xs" })
         </td>
     </tr>
 }
 
 </table>
+<div>
+    @Html.ActionLink("Volver", "Index", null, htmlAttributes: new { @class = "btn btn-default" })
+</div>

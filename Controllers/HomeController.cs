@@ -23,13 +23,7 @@ namespace LoteriaES.Controllers
 
         public ActionResult Index()
         {
-
-            return View();
-        }
-
-        public ActionResult OrderList()
-        {
-            var orders= _orderRepository.GetAll();
+            var orders = _orderRepository.GetAll();
             return View(orders);
         }
 
@@ -39,12 +33,18 @@ namespace LoteriaES.Controllers
             return View(orders);
         }
 
-        public ActionResult NewOrder()
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View("");
+        }
+
+        public ActionResult Create(LotteryNewOrder lotteryNewOrder)
         {
             var command = new CreateOrderCommand(
-                new Guid("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
-                "25003",
-                1);
+                Guid.NewGuid(),
+                lotteryNewOrder.Number,
+                lotteryNewOrder.Quantity);
 
             _bus.Send(command);
 

@@ -1,28 +1,24 @@
-﻿@model LoteriaES.Models.LotteryOrderLine
+﻿@model LoteriaES.Models.LotteryNewOrder
 
 @{
-    ViewBag.Title = "Modificar pedido";
+    ViewBag.Title = "";
 }
 
-@using (Html.BeginForm())
+<h3>Nuevo Pedido</h3>
+
+
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h3>Detalle de pedido</h3>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.OrderLineId)
-
         <div class="form-group">
-            @Html.Label("Id Pedido", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10" style="padding-top: 6px" >
-                @Html.DisplayFor(model => model.OrderId, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-        <div class="form-group">
+            @Html.Label("Número Lotería", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.HiddenFor(model => model.LotteryId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Number, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Number, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -36,14 +32,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Guardar" class="btn btn-default" />
+                <input type="submit" value="Crear" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Volver", "Index",null, htmlAttributes: new { @class = "btn btn-default" })
+    @Html.ActionLink("Volver", "Index", null, htmlAttributes: new { @class = "btn btn-default" })
 </div>
 
 @section Scripts {

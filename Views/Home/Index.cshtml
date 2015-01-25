@@ -1,9 +1,38 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<LoteriaES.Models.LotteryOrder>
+
+@{
+    ViewBag.Title = "Listado de Pedidos de Lotería";
 }
 
-<div>
-    @Html.ActionLink("Lista de Pedidos de Lotería", "OrderList")
-    @Html.ActionLink("Nuevo Pedido de Lotería", "NewOrder")
-    @Html.ActionLink("Editar Lotería", "UpdateOrderLine")
-</div>
+<h3>Listado de Pedidos</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            Id Pedido
+        </th>
+        <th>
+            Fecha de Pedido
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+            <td>
+                @Html.ActionLink("Detalle", "Details", new { id = item.OrderId }, htmlAttributes: new { @class = "btn btn-default btn-xs" })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Nuevo Pedido", "Create",null, htmlAttributes: new { @class = "btn btn-default" })
+</p>
