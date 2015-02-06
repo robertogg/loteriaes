@@ -14,15 +14,8 @@ C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.CQRS.pdb
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Core.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Entities.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Events.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Core.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Entities.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Events.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.csprojResolveAssemblyReference.cache
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.pdb
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Models.dll
-C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Models.pdb
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Infrastructure.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Models.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\EntityFramework.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Ninject.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.WindowsAzure.Storage.dll
@@ -33,7 +26,11 @@ C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.Data.Edm.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.Data.Services.Client.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.Data.OData.dll
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\System.Spatial.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Core.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Entities.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaEs.Events.pdb
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Infrastructure.pdb
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\LoteriaES.Models.pdb
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\EntityFramework.xml
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Ninject.xml
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.WindowsAzure.Storage.xml
@@ -42,3 +39,6 @@ C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.Data.Edm.xml
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.Data.Services.Client.xml
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\Microsoft.Data.OData.xml
 C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\bin\Debug\System.Spatial.xml
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.csprojResolveAssemblyReference.cache
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.dll
+C:\Proyectos\Eventos\LoteriaES\LoteriaES.CQRS\obj\Debug\LoteriaES.CQRS.pdb

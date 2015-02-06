@@ -60,12 +60,7 @@ namespace LoteriaES.Controllers
 
         public ActionResult UpdateOrderLine(LotteryOrderLine orderLine)
         {
-            //var command = new UpdateOrderCommand(
-            //    Guid.Parse("59B8A5FD-9046-431E-B90B-6DCD8EC48524"),
-            //    Guid.Parse("82EF2FDF-177C-4760-969D-DE7EC442126C"),
-            //    "25003",
-            //    5);
-
+          
             var command = new UpdateOrderCommand(orderLine.OrderId, 
                                                 orderLine.OrderLineId, 
                                                 orderLine.LotteryId.ToString(),
